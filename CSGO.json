@@ -1,0 +1,189 @@
+{
+  "name": "CSGO",
+  "version": "1",
+  "items": [
+    {
+      "type": "http",
+      "name": "busqueda-pais",
+      "seq": 1,
+      "request": {
+        "url": "http://localhost:3000/api/v1/csgo/france",
+        "method": "GET",
+        "headers": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "none",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": ""
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    },
+    {
+      "type": "http",
+      "name": "busqueda-dinamica",
+      "seq": 2,
+      "request": {
+        "url": "http://localhost:3000/api/v1/csgo/nick/sh1ro",
+        "method": "GET",
+        "headers": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "none",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": ""
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    },
+    {
+      "type": "http",
+      "name": "show-all",
+      "seq": 3,
+      "request": {
+        "url": "http://localhost:3000/api/v1/csgo/",
+        "method": "GET",
+        "headers": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "none",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": ""
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    },
+    {
+      "type": "http",
+      "name": "adduser",
+      "seq": 4,
+      "request": {
+        "url": "http://localhost:3000/api/v1/csgo/",
+        "method": "PUT",
+        "headers": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"nick\": \"Davinci\",\n  \"country\": \"Mexico\",\n  \"teams\": [\"Tecnm\"],\n  \"maps_played\": 847,\n  \"rounds_played\": 22465,\n  \"kd_difference\": 5361,\n  \"kd_ratio\": 1.45,\n  \"total_kills\": 17320,\n  \"headshot_percentage\": 27.9,\n  \"total_deaths\": 11959,\n  \"kills_per_round\": 0.77,\n  \"deaths_per_round\": 0.53\n}\n",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "none",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": ""
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    },
+    {
+      "type": "http",
+      "name": "updata",
+      "seq": 5,
+      "request": {
+        "url": "http://localhost:3000/api/v1/csgo/Davinci",
+        "method": "PATCH",
+        "headers": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n   \"country\": \"Mexico\",\n  \"teams\": [\"Tecnm-isc\"],\n  \"maps_played\": 847,\n  \"rounds_played\": 22465,\n  \"kd_difference\": 5361,\n  \"kd_ratio\": 1.45,\n  \"total_kills\": 17320,\n  \"headshot_percentage\": 27.9,\n  \"total_deaths\": 11959,\n  \"kills_per_round\": 0.77,\n  \"deaths_per_round\": 0.53\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "none",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": ""
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    },
+    {
+      "type": "http",
+      "name": "delete",
+      "seq": 6,
+      "request": {
+        "url": "http://localhost:3000/api/v1/csgo/Davinci",
+        "method": "DELETE",
+        "headers": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "none",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": ""
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    }
+  ],
+  "environments": []
+}
